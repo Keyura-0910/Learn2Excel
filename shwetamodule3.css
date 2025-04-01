@@ -1,0 +1,287 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #a5d1b6;
+    padding-top: 60px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1.5em;
+    background-color: #003049;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Section */
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navbar .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #eae2b7;
+  }
+  
+  .navbar .logo-img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .navbar .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.4s ease;
+  }
+  
+  .navbar .logo a:hover .logo-text {
+    color: #dfe9e1;
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2em;
+  }
+  
+  .nav-links a {
+    color: #fcfbff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #f4d03f;
+  }
+  
+  /* Signup Button */
+  .signup-btn {
+    background: #fca311;
+    color: #003049;
+    padding: 0.5em 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background: #f28b0c;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fcfbff;
+    cursor: pointer;
+  }
+  @media (max-width: 868px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #003049;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #fcfbff;
+    }
+}
+
+  
+  /* Content Styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 2rem;
+  }
+  
+  footer a {
+    color: #ff7a18;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Quiz Button */
+  .quiz-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .quiz-button {
+    background-color: #fca311;
+    color: #003049;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quiz-button:hover {
+    background-color: #ffba49;
+  }
+  
+  .class1 {
+    padding-top: 2em;
+  }
+  
+  /* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em;
+    background-color: #003049;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* Navbar Links - Default (Desktop) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #fcfbff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4d03f;
+}
+
+@media (max-width: 868px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #003049;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    /* Show menu when active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+    }
+}

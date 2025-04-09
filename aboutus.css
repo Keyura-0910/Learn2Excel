@@ -1,0 +1,488 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  background-color: #003049;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+/* Logo Section */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #eae2b7;
+}
+
+.navbar .logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar .logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.4s ease;
+}
+
+.navbar .logo a:hover .logo-text {
+  color: #dfe9e1;
+}
+
+/* Navbar Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2em;
+}
+
+.nav-links a {
+  color: #fcfbff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.nav-links li a:not(.signup-btn):hover {
+  color: #f4d03f;
+}
+
+/* Signup Button */
+.signup-btn {
+  background: #fca311;
+  color: #f1f3f4;
+  padding: 0.6rem 1.2rem; /* Balanced padding */
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #ffba49;
+  color: #241e60; /* Text turns blue */
+}
+
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.login-link {
+  color: #fcfbff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  color: #f4d03f;
+}
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #1a1a2e, #3a0ca3);
+  color: #e0e0e0;
+  padding-top: 80px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(20, 20, 40, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffcc00;
+  transition: 0.3s;
+}
+
+.logo-text:hover {
+  color: #f4d03f;
+}
+
+/* Navbar Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Signup Button */
+.signup-btn {
+  padding: 10px 15px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #f4d03f;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: #222;
+      width: 100%;
+      text-align: center;
+      padding: 1em 0;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .hamburger {
+      display: block;
+  }
+}
+
+/* About Section */
+.about-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Vision, Mission, Objectives Section */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+img {
+  max-width: 100%;  /* scales down if needed */
+  height: 80px;
+}
+
+.vision-box, .mission-box, .objectives-box {
+  flex: 1;
+  min-width: 320px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  gap: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+}
+
+.vision-box:hover, .mission-box:hover, .objectives-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ffcc00;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgba(20, 20, 40, 0.9);
+  color: white;
+  padding: 15px;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+      padding: 40px 15px;
+  }
+
+  .flex-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #3a0ca3);
+    color: #e0e0e0;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Team Section */
+.team-section {
+    padding: 60px 20px;
+}
+
+.team-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.team-intro {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+/* Team Grid Layout */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Team Card */
+.team-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 50px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    min-height: 400px; /* Increased box height */
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.4);
+}
+
+/* Profile Image */
+.team-card img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* Member Name */
+.team-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+/* Member Role */
+.team-card p {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.social-btn i {
+    font-size: 1.5rem;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.github {
+    background-color: #333;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .team-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    .team-card {
+        max-width: 100%;
+    }
+}
+

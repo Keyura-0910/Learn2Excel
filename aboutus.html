@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Learn2Excel</title>
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img class="logo-img" src="logo.png" alt="Logo">
+                    <span class="logo-text">Learn2Excel</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+               <li> <a href="login.html" class="login-link">Login</a></li>
+            </ul>
+            <button class="signup-btn">Sign Up</button>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="about-section">
+            <h1>Welcome to Learn2Excel! 🚀</h1>
+            <p>
+                At <strong>Learn2Excel</strong>, we believe that education should go beyond textbooks and classrooms. 
+                We are dedicated to <strong>empowering individuals with essential life skills</strong> that are often overlooked in traditional schooling.
+            </p>
+        </section>
+        
+
+        <!-- Mission, Vision, and Objectives Section -->
+        <section class="flex-container">
+            <div class="box mission-box">
+                <img src="mission.png" alt="Mission Icon" class="icon">
+                <h2>Our Mission</h2>
+                <p>At <strong>Learn2Excel</strong>, we strive to bridge the gap between traditional education and real-world skills by providing hands-on learning experiences in essential life skills.</p>
+                <ul>
+                    <li>🌍 Empowering individuals with practical knowledge</li>
+                    <li>🧠 Encouraging self-reliance through skill-based learning</li>
+                    <li>📊 Financial planning for smarter money management</li>
+                    <li>🌿 Sustainable living through farming & gardening</li>
+                    <li>🥋 Boosting confidence with self-defense techniques</li>
+                </ul>
+            </div>
+        </section>
+        
+
+    <div class="box vision-box">
+        <img src="vision.png" alt="Vision Icon" class="icon">
+        <h2>Our Vision</h2>
+        <p>We envision a world where <strong>technology education is accessible to all</strong>, empowering learners to innovate and shape the future.</p>
+    </div>
+
+    <div class="box objectives-box">
+        <img src="objectives.png" alt="Objectives Icon" class="icon">
+        <h2>Our Objectives</h2>
+        <ul>
+            <li>📚 Provide industry-relevant training</li>
+            <li>🔬 Foster innovation and learning</li>
+            <li>💼 Help students become job-ready</li>
+            <li>🤝 Collaborate with industry experts</li>
+        </ul>
+    </div>
+</section>
+        
+
+        <!-- Meet Our Team Section -->
+    <section class="team-section">
+        <h1>Meet The Team behind Learn2Excel!</h1>
+        <p class="team-intro">We are a team of passionate professionals committed to delivering excellence.</p>
+        <div class="team-container">
+            
+            <!-- Team Member 1 -->
+            <div class="team-card">
+                <img src="keyura_img.png" alt="keyura">
+                <h2>Keyura Motegaonkar</h2>
+                <p>Developer</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/keyura-motegaonkar-50043a25a/" class="social-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/Keyura-0910" class="social-btn github"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card">
+                <img src="shweta_img.jfif" alt="shweta">
+                <h2>Shweta Jadhav</h2>
+                <p>Developer</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shweta-jadhav-9510b5292/?originalSubdomain=in" class="social-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/ShwetaJadhav12" class="social-btn github"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-card">
+                <img src="member3.jpg" alt="vaishnavi">
+                <h2>Vaishnavi Gaikwad</h2>
+                <p>Developer</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vaishnavi-gaikwad-675093294/" class="social-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/Vaishnavi-Gaikwad-25" class="social-btn github"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-card">
+                <img src="member4.jpg" alt="Chaitali">
+                <h2>Chaitali Waware</h2>
+                <p>Developer</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/chaitali-waware-2ab830324/" class="social-btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/ChaitaliWaware74" class="social-btn github"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Learn2Excel | <a href="#">Contact Us</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+
+            function toggleMenu() {
+                if (!hamburger || !navLinks) {
+                    console.error("Navbar elements not found!");
+                    return;
+                }
+                navLinks.classList.toggle("active");
+            }
+
+            hamburger.addEventListener("click", toggleMenu);
+        });
+    </script>
+
+</body>
+
+</html>

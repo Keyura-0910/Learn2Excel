@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Self-Defense Escape Room</title>
+  <link rel="stylesheet" href="sdgame1.css" />
+</head>
+<body>
+  <h1>🧠 Self-Defense Escape Room</h1>
+  <h2 id="room-title">Room Title</h2>
+  <p id="timer">⏳ Time Left: <span id="time">120</span>s</p>
+  <p id="score">Score: 100</p>
+
+  <div class="grid" id="card-grid"></div>
+  <div class="controls">
+    <input type="text" id="codeInput" maxlength="3" placeholder="Enter Code" />
+    <button onclick="checkCode()">Unlock</button>
+    <button onclick="showHint()">Hint (-15 pts)</button>
+  </div>
+
+  <p id="hint"></p>
+  <p id="message"></p>
+  <div id="lock"></div>
+  
+
+  <script src="sdgame1.js"></script>
+</body>
+</html>

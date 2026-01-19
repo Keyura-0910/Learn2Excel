@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic First Aid - Learn and Save Lives</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fc;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(45deg, #4caf50, #8bc34a);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .module {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .module:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+      color: #333;
+      font-size: 2rem;
+      border-bottom: 2px solid #8bc34a;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    p, ul, ol {
+      line-height: 1.8;
+    }
+    .quiz {
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .quiz-question {
+      margin: 15px 0;
+    }
+    .quiz-options {
+      list-style-type: none;
+      padding: 0;
+    }
+    .quiz-options li {
+      margin: 10px 0;
+    }
+    .quiz-options input[type="radio"] {
+      margin-right: 10px;
+    }
+    .submit-btn {
+      padding: 12px 25px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .submit-btn:hover {
+      background: #45a049;
+    }
+    .feedback {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #333;
+      display: none;
+    }
+    .correct {
+      color: #4caf50;
+    }
+    .incorrect {
+      color: #f44336;
+    }
+    .progress-bar {
+      height: 10px;
+      width: 100%;
+      background-color: #ddd;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .progress-bar-filled {
+      height: 100%;
+      width: 0%;
+      background-color: #4caf50;
+      border-radius: 5px;
+      transition: width 0.5s ease;
+    }
+    .icon {
+      width: 30px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Basic First Aid - Learn and Save Lives</h1>
+  </header>
+
+  <div class="container">
+    <!-- Module 1: Introduction to First Aid -->
+    <div class="module">
+      <h2>Module 1: Introduction to First Aid</h2>
+      <p>First Aid is the initial help provided to someone who is injured or unwell before professional medical help arrives. Quick and correct action can prevent a situation from becoming worse and can save lives. First Aid is important for everyone to know because accidents can happen anytime, anywhere.</p>
+      
+      <p><strong>Importance of First Aid:</strong></p>
+      <ul>
+        <li><img class="icon" src="https://img.icons8.com/ios/50/4caf50/first-aid-kit.png"> Reduces the severity of injuries and illnesses.</li>
+        <li><img class="icon" src="https://img.icons8.com/ios/50/4caf50/first-aid-kit.png"> Saves lives by stabilizing the patient until professional help arrives.</li>
+        <li><img class="icon" src="https://img.icons8.com/ios/50/4caf50/first-aid-kit.png"> Helps the patient feel more comfortable and reassured.</li>
+        <li><img class="icon" src="https://img.icons8.com/ios/50/4caf50/first-aid-kit.png"> Prevents the condition from worsening due to delays in seeking professional medical help.</li>
+      </ul>
+
+      <p><strong>Common Scenarios Where First Aid is Required:</strong></p>
+      <ul>
+        <li><img class="icon" src="https://img.icons8.com/ios/50/4caf50/first-aid-kit.png"> Injuries at home: Cuts, burns, and falls.</li>
+        <li><img class="icon" src="https://img.icons8.com/ios/50/4caf50/first-aid-kit.png"> Accidents in school or playgrounds: Scrapes, bruises, and fractures.</li>
+        <li><img class="icon" src="https://img.icons8.com/ios/50/4caf50/first-aid-kit.png"> Sports injuries: Sprains, strains, and dislocations.</li>
+        <li><img class="icon" src="https://img.icons8.com/ios/50/4caf50/first-aid-kit.png"> Medical emergencies: Fainting, asthma attacks, or seizures.</li>
+        <li><img class="icon" src="https://img.icons8.com/ios/50/4caf50/first-aid-kit.png"> Accidents during travel: Injuries due to traffic accidents or natural disasters.</li>
+      </ul>
+
+      <div class="quiz">
+        <h3>Test Your Knowledge</h3>
+        <div class="quiz-question">
+          <p><strong>1. Why is first aid important?</strong></p>
+          <ul class="quiz-options">
+            <li><input type="radio" id="q1a1" name="q1" value="wrong"> To reduce pain only</li>
+            <li><input type="radio" id="q1a2" name="q1" value="correct"> To prevent further injury and save lives</li>
+            <li><input type="radio" id="q1a3" name="q1" value="wrong"> To avoid going to the doctor</li>
+          </ul>
+        </div>
+        <div class="quiz-question">
+          <p><strong>2. Where is first aid needed?</strong></p>
+          <ul class="quiz-options">
+            <li><input type="radio" id="q2a1" name="q2" value="wrong"> Only in the hospital</li>
+            <li><input type="radio" id="q2a2" name="q2" value="correct"> In any place where an accident occurs</li>
+            <li><input type="radio" id="q2a3" name="q2" value="wrong"> Only during sports events</li>
+          </ul>
+        </div>
+        <button class="submit-btn" onclick="checkAnswers(1)">Submit Answers</button>
+        <div class="feedback" id="feedback"></div>
+        <div class="progress-bar">
+          <div class="progress-bar-filled" id="progressBar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Module 2: Handling Cuts and Wounds -->
+    <div class="module">
+      <h2>Module 2: Handling Cuts and Wounds</h2>
+      <p><strong>Types of Cuts and Wounds:</strong></p>
+      <ul>
+        <li><strong>Minor Cuts:</strong> Small breaks in the skin that typically heal on their own.</li>
+        <li><strong>Deep Cuts:</strong> Deeper lacerations that may need stitches or medical attention.</li>
+        <li><strong>Scrapes (Abrasions):</strong> Surface injuries from friction that cause the skin to rub off.</li>
+      </ul>
+      <p><strong>How to Clean and Treat Cuts:</strong></p>
+      <ol>
+        <li><strong>Wash Your Hands:</strong> Always start by cleaning your hands to avoid infection.</li>
+        <li><strong>Stop the Bleeding:</strong> Use a clean cloth to apply pressure to the wound.</li>
+        <li><strong>Clean the Wound:</strong> Use mild soap and water to clean the area around the cut.</li>
+        <li><strong>Apply Antiseptic:</strong> Use an antiseptic ointment to prevent infection.</li>
+        <li><strong>Bandage the Wound:</strong> Use a sterile bandage or gauze to cover the cut.</li>
+        <li><strong>Monitor for Infection:</strong> Watch for signs like redness, swelling, or pus.</li>
+      </ol>
+
+      <div class="quiz">
+        <h3>Test Your Knowledge</h3>
+        <div class="quiz-question">
+          <p><strong>1. What is the first step in treating a cut?</strong></p>
+          <ul class="quiz-options">
+            <li><input type="radio" id="q3a1" name="q3" value="wrong"> Apply antiseptic immediately</li>
+            <li><input type="radio" id="q3a2" name="q3" value="correct"> Wash your hands</li>
+            <li><input type="radio" id="q3a3" name="q3" value="wrong"> Cover the wound with a bandage</li>
+          </ul>
+        </div>
+        <div class="quiz-question">
+          <p><strong>2. How do you stop the bleeding from a deep cut?</strong></p>
+          <ul class="quiz-options">
+            <li><input type="radio" id="q4a1" name="q4" value="correct"> Apply pressure with a clean cloth</li>
+            <li><input type="radio" id="q4a2" name="q4" value="wrong"> Rub the cut to stop it</li>
+            <li><input type="radio" id="q4a3" name="q4" value="wrong"> Apply ice directly to the cut</li>
+          </ul>
+        </div>
+        <button class="submit-btn" onclick="checkAnswers(2)">Submit Answers</button>
+        <div class="feedback" id="feedback"></div>
+        <div class="progress-bar">
+          <div class="progress-bar-filled" id="progressBar"></div>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- Module 3: CPR and Resuscitation -->
+<div class="module">
+  <h2>Module 3: CPR and Resuscitation</h2>
+  <p><strong>What is CPR?</strong></p>
+  <p>Cardiopulmonary Resuscitation (CPR) is a life-saving technique used when someone's breathing or heartbeat has stopped. CPR helps maintain the flow of oxygen to the brain and other vital organs, preventing brain damage or death. It's important to act quickly and calmly in such situations.</p>
+
+  <p><strong>Steps for Performing CPR on Adults:</strong></p>
+  <ol>
+    <li><strong>Ensure Safety:</strong> Make sure the environment is safe for you and the victim.</li>
+    <li><strong>Check for Responsiveness:</strong> Tap the person gently and shout, "Are you OK?"</li>
+    <li><strong>Call for Help:</strong> Call 911 or emergency services immediately.</li>
+    <li><strong>Start Chest Compressions:</strong> Place your hands in the center of the chest and push hard and fast (at least 2 inches deep and 100-120 compressions per minute).</li>
+    <li><strong>Give Rescue Breaths:</strong> After every 30 compressions, give 2 rescue breaths.</li>
+    <li><strong>Continue CPR:</strong> Continue until help arrives or the person begins to breathe on their own.</li>
+  </ol>
+
+  <p><strong>CPR for Children and Infants:</strong> The technique is similar, but the chest compressions are gentler, and the number of compressions is adjusted based on the child's size and age.</p>
+
+  <div class="quiz">
+    <h3>Test Your Knowledge</h3>
+    <div class="quiz-question">
+      <p><strong>1. What is the first step when performing CPR?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q5a1" name="q5" value="wrong"> Check if the person has a pulse</li>
+        <li><input type="radio" id="q5a2" name="q5" value="correct"> Ensure the area is safe and call for help</li>
+        <li><input type="radio" id="q5a3" name="q5" value="wrong"> Start giving rescue breaths</li>
+      </ul>
+    </div>
+    <div class="quiz-question">
+      <p><strong>2. How many chest compressions should you give per minute?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q6a1" name="q6" value="wrong"> 50-60 compressions</li>
+        <li><input type="radio" id="q6a2" name="q6" value="correct"> 100-120 compressions</li>
+        <li><input type="radio" id="q6a3" name="q6" value="wrong"> 150-160 compressions</li>
+      </ul>
+    </div>
+    <button class="submit-btn" onclick="checkAnswers(3)">Submit Answers</button>
+    <div class="feedback" id="feedback"></div>
+    <div class="progress-bar">
+      <div class="progress-bar-filled" id="progressBar"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Module 4: Dealing with Burns -->
+<div class="module">
+  <h2>Module 4: Dealing with Burns</h2>
+  <p><strong>Types of Burns:</strong></p>
+  <ul>
+    <li><strong>First-Degree Burns:</strong> Affect only the outer layer of the skin, causing redness and pain.</li>
+    <li><strong>Second-Degree Burns:</strong> Affect deeper layers, causing blisters and intense pain.</li>
+    <li><strong>Third-Degree Burns:</strong> Damage all layers of the skin, often causing numbness and white or charred skin.</li>
+  </ul>
+
+  <p><strong>How to Treat Burns:</strong></p>
+  <ol>
+    <li><strong>Cool the Burn:</strong> Run cool (not cold) water over the burn for at least 10 minutes.</li>
+    <li><strong>Cover the Burn:</strong> Use a clean cloth or sterile bandage to cover the burn area.</li>
+    <li><strong>Do Not Pop Blisters:</strong> If the burn has caused blisters, do not break them, as they protect the underlying skin.</li>
+    <li><strong>Seek Medical Help:</strong> For second-degree or third-degree burns, seek professional medical attention immediately.</li>
+  </ol>
+
+  <p><strong>Important Tips:</strong></p>
+  <ul>
+    <li>Never apply ice directly to a burn.</li>
+    <li>Do not apply butter or ointments to burns, as they can worsen the injury.</li>
+    <li>For electrical burns, turn off the power source before assisting the person.</li>
+  </ul>
+
+  <div class="quiz">
+    <h3>Test Your Knowledge</h3>
+    <div class="quiz-question">
+      <p><strong>1. What is the first step in treating a burn?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q7a1" name="q7" value="correct"> Run cool water over the burn</li>
+        <li><input type="radio" id="q7a2" name="q7" value="wrong"> Apply ice directly on the burn</li>
+        <li><input type="radio" id="q7a3" name="q7" value="wrong"> Apply ointment or butter on the burn</li>
+      </ul>
+    </div>
+    <div class="quiz-question">
+      <p><strong>2. How should you treat third-degree burns?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q8a1" name="q8" value="wrong"> Apply pressure on the burn</li>
+        <li><input type="radio" id="q8a2" name="q8" value="correct"> Seek immediate medical attention</li>
+        <li><input type="radio" id="q8a3" name="q8" value="wrong"> Cover the burn with ice</li>
+      </ul>
+    </div>
+    <button class="submit-btn" onclick="checkAnswers(4)">Submit Answers</button>
+    <div class="feedback" id="feedback"></div>
+    <div class="progress-bar">
+      <div class="progress-bar-filled" id="progressBar"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Module 5: Managing Fractures and Sprains -->
+<div class="module">
+  <h2>Module 5: Managing Fractures and Sprains</h2>
+  <p><strong>What is a Fracture?</strong></p>
+  <p>A fracture is a break in the bone, and it can vary from a small crack to a complete break. It can occur due to accidents, falls, or sports injuries.</p>
+  
+  <p><strong>How to Manage a Fracture:</strong></p>
+  <ol>
+    <li><strong>Do Not Move the Person:</strong> If you suspect a fracture, avoid moving the person to prevent further injury.</li>
+    <li><strong>Immobilize the Fracture:</strong> Use a splint to immobilize the injured area. A sturdy material like a piece of wood or a rolled-up towel can be used.</li>
+    <li><strong>Apply Ice:</strong> Apply a cold compress to reduce swelling and pain.</li>
+    <li><strong>Seek Medical Help:</strong> Call for emergency medical help immediately.</li>
+  </ol>
+
+  <p><strong>What is a Sprain?</strong></p>
+  <p>A sprain occurs when a ligament is stretched or torn. This usually happens when a joint is twisted suddenly.</p>
+
+  <p><strong>How to Manage a Sprain:</strong></p>
+  <ol>
+    <li><strong>Rest the Joint:</strong> Avoid putting weight on the injured area.</li>
+    <li><strong>Apply Ice:</strong> Ice the area to reduce swelling.</li>
+    <li><strong>Compress:</strong> Use an elastic bandage to apply compression to reduce swelling.</li>
+    <li><strong>Elevate:</strong> Raise the injured limb to reduce swelling.</li>
+  </ol>
+
+  <div class="quiz">
+    <h3>Test Your Knowledge</h3>
+    <div class="quiz-question">
+      <p><strong>1. How should you immobilize a fracture?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q9a1" name="q9" value="correct"> Use a splint to keep the bone in place</li>
+        <li><input type="radio" id="q9a2" name="q9" value="wrong"> Rub the area to relieve pain</li>
+        <li><input type="radio" id="q9a3" name="q9" value="wrong"> Move the person to a hospital immediately</li>
+      </ul>
+    </div>
+    <div class="quiz-question">
+      <p><strong>2. How should you treat a sprain?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q10a1" name="q10" value="wrong"> Apply heat to the joint</li>
+        <li><input type="radio" id="q10a2" name="q10" value="correct"> Rest, ice, compress, and elevate</li>
+        <li><input type="radio" id="q10a3" name="q10" value="wrong"> Move the joint as much as possible</li>
+      </ul>
+    </div>
+    <button class="submit-btn" onclick="checkAnswers(5)">Submit Answers</button>
+    <div class="feedback" id="feedback"></div>
+    <div class="progress-bar">
+      <div class="progress-bar-filled" id="progressBar"></div>
+    </div>
+  </div>
+</div>
+<!-- Module 5: Managing Fractures and Sprains -->
+<div class="module">
+  <h2>Module 5: Managing Fractures and Sprains</h2>
+  <p><strong>What is a Fracture?</strong></p>
+  <p>A fracture is a break in the bone, and it can vary from a small crack to a complete break. It can occur due to accidents, falls, or sports injuries.</p>
+  
+  <p><strong>How to Manage a Fracture:</strong></p>
+  <ol>
+    <li><strong>Do Not Move the Person:</strong> If you suspect a fracture, avoid moving the person to prevent further injury.</li>
+    <li><strong>Immobilize the Fracture:</strong> Use a splint to immobilize the injured area. A sturdy material like a piece of wood or a rolled-up towel can be used.</li>
+    <li><strong>Apply Ice:</strong> Apply a cold compress to reduce swelling and pain.</li>
+    <li><strong>Seek Medical Help:</strong> Call for emergency medical help immediately.</li>
+  </ol>
+
+  <p><strong>What is a Sprain?</strong></p>
+  <p>A sprain occurs when a ligament is stretched or torn. This usually happens when a joint is twisted suddenly.</p>
+
+  <p><strong>How to Manage a Sprain:</strong></p>
+  <ol>
+    <li><strong>Rest the Joint:</strong> Avoid putting weight on the injured area.</li>
+    <li><strong>Apply Ice:</strong> Ice the area to reduce swelling.</li>
+    <li><strong>Compress:</strong> Use an elastic bandage to apply compression to reduce swelling.</li>
+    <li><strong>Elevate:</strong> Raise the injured limb to reduce swelling.</li>
+  </ol>
+
+  <div class="quiz">
+    <h3>Test Your Knowledge</h3>
+    <div class="quiz-question">
+      <p><strong>1. How should you immobilize a fracture?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q9a1" name="q9" value="correct"> Use a splint to keep the bone in place</li>
+        <li><input type="radio" id="q9a2" name="q9" value="wrong"> Rub the area to relieve pain</li>
+        <li><input type="radio" id="q9a3" name="q9" value="wrong"> Move the person to a hospital immediately</li>
+      </ul>
+    </div>
+    <div class="quiz-question">
+      <p><strong>2. How should you treat a sprain?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q10a1" name="q10" value="wrong"> Apply heat to the joint</li>
+        <li><input type="radio" id="q10a2" name="q10" value="correct"> Rest, ice, compress, and elevate</li>
+        <li><input type="radio" id="q10a3" name="q10" value="wrong"> Move the joint as much as possible</li>
+      </ul>
+    </div>
+    <button class="submit-btn" onclick="checkAnswers(5)">Submit Answers</button>
+    <div class="feedback" id="feedback"></div>
+    <div class="progress-bar">
+      <div class="progress-bar-filled" id="progressBar"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Module 6: Choking Emergencies -->
+<div class="module">
+  <h2>Module 6: Choking Emergencies</h2>
+  <p><strong>What is Choking?</strong></p>
+  <p>Choking occurs when a person’s airway is blocked by food, an object, or another obstruction, preventing them from breathing. It is a medical emergency that requires immediate action.</p>
+
+  <p><strong>Signs of Choking:</strong></p>
+  <ul>
+    <li>The person may not be able to speak or breathe.</li>
+    <li>The person may have difficulty breathing, wheezing, or coughing.</li>
+    <li>The person may clutch their throat, indicating they are unable to clear the obstruction.</li>
+  </ul>
+
+  <p><strong>How to Help a Choking Adult:</strong></p>
+  <ol>
+    <li><strong>Encourage Coughing:</strong> If the person is coughing, encourage them to keep coughing to try and clear the airway.</li>
+    <li><strong>Heimlich Maneuver:</strong> Stand behind the person, wrap your arms around their waist, and make a fist with one hand. Place the thumb side just above their navel, grab your fist with your other hand, and thrust inward and upward sharply. Repeat until the object is expelled.</li>
+    <li><strong>Call for Help:</strong> If the person is still choking or unconscious, call 911 immediately.</li>
+  </ol>
+
+  <p><strong>How to Help a Choking Child:</strong></p>
+  <ol>
+    <li><strong>Back Blows:</strong> For children over 1 year old, lean them forward and give up to five back blows between the shoulder blades.</li>
+    <li><strong>Chest Thrusts:</strong> If the back blows don’t work, give chest thrusts. Use two fingers to push inward and upward on the center of their chest.</li>
+  </ol>
+
+  <p><strong>How to Help a Choking Infant:</strong></p>
+  <ol>
+    <li><strong>Back Slaps:</strong> For infants under 1 year old, give 5 back slaps between the shoulder blades.</li>
+    <li><strong>Chest Thrusts:</strong> Turn the infant over and give 5 chest thrusts using two fingers, pushing inward and downward.</li>
+  </ol>
+
+  <div class="quiz">
+    <h3>Test Your Knowledge</h3>
+    <div class="quiz-question">
+      <p><strong>1. What is the first step in helping a choking adult?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q11a1" name="q11" value="wrong"> Perform CPR immediately</li>
+        <li><input type="radio" id="q11a2" name="q11" value="correct"> Encourage the person to cough</li>
+        <li><input type="radio" id="q11a3" name="q11" value="wrong"> Give them a glass of water</li>
+      </ul>
+    </div>
+    <div class="quiz-question">
+      <p><strong>2. How do you perform the Heimlich maneuver?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q12a1" name="q12" value="correct"> Place a fist above the navel and thrust upward</li>
+        <li><input type="radio" id="q12a2" name="q12" value="wrong"> Hit the person on the back forcefully</li>
+        <li><input type="radio" id="q12a3" name="q12" value="wrong"> Push on the chest of the person</li>
+      </ul>
+    </div>
+    <button class="submit-btn" onclick="checkAnswers(6)">Submit Answers</button>
+    <div class="feedback" id="feedback"></div>
+    <div class="progress-bar">
+      <div class="progress-bar-filled" id="progressBar"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Module 7: Allergic Reactions -->
+<div class="module">
+  <h2>Module 7: Allergic Reactions</h2>
+  <p><strong>What is an Allergic Reaction?</strong></p>
+  <p>An allergic reaction occurs when the immune system reacts to a foreign substance (allergen) as if it were harmful. Common allergens include certain foods, insect stings, medications, and pollen.</p>
+
+  <p><strong>Signs of an Allergic Reaction:</strong></p>
+  <ul>
+    <li>Itching or hives on the skin</li>
+    <li>Swelling, particularly around the eyes, lips, or throat</li>
+    <li>Difficulty breathing or wheezing</li>
+    <li>Dizziness or fainting</li>
+  </ul>
+
+  <p><strong>How to Treat Mild Allergic Reactions:</strong></p>
+  <ol>
+    <li><strong>Administer Antihistamines:</strong> Over-the-counter antihistamines can relieve itching and swelling.</li>
+    <li><strong>Apply Cold Compresses:</strong> If the person has swelling or hives, applying a cold compress can help reduce discomfort.</li>
+  </ol>
+
+  <p><strong>How to Treat Severe Allergic Reactions (Anaphylaxis):</strong></p>
+  <ol>
+    <li><strong>Administer Epinephrine:</strong> If the person has an epinephrine auto-injector (EpiPen), administer it immediately into the outer thigh.</li>
+    <li><strong>Call for Help:</strong> Call 911 and inform them that the person is experiencing anaphylaxis.</li>
+    <li><strong>Perform CPR if Necessary:</strong> If the person becomes unresponsive, start CPR and continue until emergency medical services arrive.</li>
+  </ol>
+
+  <div class="quiz">
+    <h3>Test Your Knowledge</h3>
+    <div class="quiz-question">
+      <p><strong>1. What should you do if someone is having a severe allergic reaction?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q13a1" name="q13" value="wrong"> Give them a glass of water</li>
+        <li><input type="radio" id="q13a2" name="q13" value="correct"> Administer epinephrine and call 911</li>
+        <li><input type="radio" id="q13a3" name="q13" value="wrong"> Apply a cold compress</li>
+      </ul>
+    </div>
+    <div class="quiz-question">
+      <p><strong>2. What are the symptoms of an allergic reaction?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q14a1" name="q14" value="wrong"> Difficulty breathing and dizziness</li>
+        <li><input type="radio" id="q14a2" name="q14" value="correct"> Itching, swelling, and difficulty breathing</li>
+        <li><input type="radio" id="q14a3" name="q14" value="wrong"> High fever and rash</li>
+      </ul>
+    </div>
+    <button class="submit-btn" onclick="checkAnswers(7)">Submit Answers</button>
+    <div class="feedback" id="feedback"></div>
+    <div class="progress-bar">
+      <div class="progress-bar-filled" id="progressBar"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Module 8: First Aid Kit Essentials -->
+<div class="module">
+  <h2>Module 8: First Aid Kit Essentials</h2>
+  <p><strong>Why Do You Need a First Aid Kit?</strong></p>
+  <p>A well-stocked first aid kit is essential for handling minor injuries and emergencies. It helps you respond to situations quickly and effectively while waiting for professional medical help.</p>
+
+  <p><strong>What Should Be in a First Aid Kit?</strong></p>
+  <ul>
+    <li><strong>Adhesive Bandages:</strong> For covering small cuts, blisters, or abrasions.</li>
+    <li><strong>Antiseptic Wipes:</strong> To clean wounds and prevent infection.</li>
+    <li><strong>Gauze Pads:</strong> For covering larger wounds and controlling bleeding.</li>
+    <li><strong>Adhesive Tape:</strong> To secure gauze or bandages in place.</li>
+    <li><strong>Antibiotic Ointment:</strong> To prevent infection in minor cuts and abrasions.</li>
+    <li><strong>Burn Cream:</strong> For treating minor burns.</li>
+    <li><strong>Scissors:</strong> To cut tape, gauze, or clothing if necessary.</li>
+    <li><strong>Thermometer:</strong> To check for fever.</li>
+    <li><strong>Instant Cold Packs:</strong> To reduce swelling in sprains or strains.</li>
+    <li><strong>CPR Face Shield:</strong> For performing CPR safely.</li>
+  </ul>
+
+  <div class="quiz">
+    <h3>Test Your Knowledge</h3>
+    <div class="quiz-question">
+      <p><strong>1. What is the purpose of an antiseptic wipe in a first aid kit?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q15a1" name="q15" value="wrong"> To bandage the wound</li>
+        <li><input type="radio" id="q15a2" name="q15" value="correct"> To clean the wound and prevent infection</li>
+        <li><input type="radio" id="q15a3" name="q15" value="wrong"> To cool the burn</li>
+      </ul>
+    </div>
+    <div class="quiz-question">
+      <p><strong>2. What should you use to treat a minor burn?</strong></p>
+      <ul class="quiz-options">
+        <li><input type="radio" id="q16a1" name="q16" value="wrong"> Alcohol</li>
+        <li><input type="radio" id="q16a2" name="q16" value="correct"> Burn cream</li>
+        <li><input type="radio" id="q16a3" name="q16" value="wrong"> Ice directly on the burn</li>
+      </ul>
+    </div>
+    <button class="submit-btn" onclick="checkAnswers(8)">Submit Answers</button>
+    <div class="feedback" id="feedback"></div>
+    <div class="progress-bar">
+      <div class="progress-bar-filled" id="progressBar"></div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script>
+    function checkAnswers(moduleNumber) {
+      let correctAnswers = 0;
+      if (moduleNumber === 1) {
+        if (document.getElementById('q1a2').checked) correctAnswers++;
+        if (document.getElementById('q2a2').checked) correctAnswers++;
+      } else if (moduleNumber === 2) {
+        if (document.getElementById('q3a2').checked) correctAnswers++;
+        if (document.getElementById('q4a1').checked) correctAnswers++;
+      }
+      const feedback = document.getElementById('feedback');
+      const progressBar = document.getElementById('progressBar');
+      feedback.style.display = 'block';
+      if (correctAnswers === 2) {
+        feedback.textContent = 'Great job! You answered all questions correctly.';
+        feedback.classList.add('correct');
+        feedback.classList.remove('incorrect');
+        progressBar.style.width = '100%';
+      } else {
+        feedback.textContent = 'Oops! Some answers were incorrect. Try again!';
+        feedback.classList.add('incorrect');
+        feedback.classList.remove('correct');
+        progressBar.style.width = (correctAnswers / 2) * 100 + '%';
+      }
+    }
+    
+  </script>
+
+</body>
+</html>
